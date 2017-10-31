@@ -1,7 +1,7 @@
 # python-rsi
 RSI (Relative Strength Index) written in Python
 
-![alt tag](https://github.com/mtamer/python-rsi/blob/master/Stock Screener/example.png)
+![Python RSI Image](https://github.com/mtamer/python-rsi/blob/master/Stock%20Screener/example.png)
 
 ## To Install
 1. pip install -r requirements.txt 
