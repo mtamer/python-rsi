@@ -9,10 +9,10 @@ from mplfinance.original_flavor import candlestick_ohlc
 import pandas_datareader.data as web
 import matplotlib
 import pylab
+
 matplotlib.rcParams.update({'font.size': 9})
 
-stocks = ['SU', 'TSLA', 'GOOG', 'TQQQ']
-
+stocks = ['SU', 'TSLA', 'GOOG', 'TQQQ', 'ROKU', 'MSFT', 'AAPL', 'AMZN', 'UONE', 'FRG', 'CLDX', 'SNE', 'QQQ', 'COST', 'BABA', 'SPY', 'FB', 'SHLL', 'IDEX', 'PTON', 'NVDA', 'GOL','DIS']
 
 def rsiFunc(prices, n=14):
     deltas = np.diff(prices)
@@ -96,7 +96,7 @@ def graphData(stock, MA1, MA2):
 
         rsi = rsiFunc(closep)
 
-        if rsi[-1] > 30:
+        if rsi[-1] < 30 or rsi[-1] > 70:
             x = 0
             y = len(date)
             newAr = []
@@ -231,4 +231,4 @@ def graphData(stock, MA1, MA2):
 
 
 for stock in stocks:
-    graphData(stock, 10, 50)
+    graphData(stock, 20, 200)
