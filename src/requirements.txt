@@ -8,7 +8,7 @@ idna==2.9
 isort==4.3.21
 kiwisolver==1.2.0
 lazy-object-proxy==1.4.3
-lxml==4.5.1
+lxml==4.9.1
 matplotlib==3.2.2
 mccabe==0.6.1
 mplfinance==0.12.5a3
